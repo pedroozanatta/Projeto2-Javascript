@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <header>
+            <h1>Seja Bem Vindo a lista de jogos</h1>
+            <h2>Selecione um abaixo para iniciar</h2>
+        </header>
+        <main>
+            <button onclick="jogoNumeroSecreto()">Advinhe o número secreto</button>
+            <button onclick="jogoCalculoMedia()">Calcule a média</button>
+            <button onclick="mostrarJogo()">Jogo de Somar Número</button>
+                <div id="inputContainer">
+                    <input type="number" id="numero1" placeholder="Digite o 1º número">
+                    <br>
+                    <input type="number" id="numero2" placeholder="Digite o 2º número">
+                    <br>
+                    <button id="btn-somar" onclick="somaNumeros()">Somar</button>
+                </div>
+            <div id="resultado"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
